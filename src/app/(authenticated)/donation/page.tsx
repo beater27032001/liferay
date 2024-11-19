@@ -9,12 +9,12 @@ export default function Donations() {
 
   useEffect(() => {
     // Fetch all donations
-    fetch('http://localhost:3001/donations')
+    fetch('/api/donations')
       .then((response) => response.json())
       .then((data) => setDonations(data));
 
     // Fetch all users
-    fetch('http://localhost:3001/users')
+    fetch('/api/users')
       .then((response) => response.json())
       .then((users) => {
         const userMap = users.reduce((acc: { [key: string]: string }, user: Users) => {

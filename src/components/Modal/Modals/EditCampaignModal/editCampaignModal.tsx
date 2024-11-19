@@ -62,7 +62,7 @@ export default function EditCampaignModal({ isOpen, onClose, campaign, onUpdate 
       };
 
       // Update the campaign in the JSON server
-      const response = await fetch(`http://localhost:3001/campaigns/${campaign.id}`, {
+      const response = await fetch(`/api/campaigns/${campaign.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

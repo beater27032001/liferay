@@ -36,7 +36,7 @@ export default function DonationModal({ isOpen, onClose, materials, campaignId, 
       };
 
       // Save the donation to the JSON server
-      const response = await fetch('http://localhost:3001/donations', {
+      const response = await fetch('/api/donations', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -46,12 +46,12 @@ export default function DonationModal({ isOpen, onClose, materials, campaignId, 
 
       if (response.ok) {
         // Update the user's donations
-        const userResponse = await fetch(`http://localhost:3001/users/${userId}`);
+        const userResponse = await fetch(`/api/users/${userId}`);
         const userData = await userResponse.json();
         const updatedUserDonations = [...userData.donations, donation.id];
         const updatedUser = { ...userData, donations: updatedUserDonations };
 
-        await fetch(`http://localhost:3001/users/${userId}`, {
+        await fetch(`/api/users/${userId}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ export default function DonationModal({ isOpen, onClose, materials, campaignId, 
         });
 
         // Update the campaign's donations
-        const campaignResponse = await fetch(`http://localhost:3001/campaigns/${campaignId}`);
+        const campaignResponse = await fetch(`/api/campaigns/${campaignId}`);
         const campaignData = await campaignResponse.json();
         const updatedCampaignDonations = [...campaignData.donations, donation.id];
         const updatedMaterials = campaignData.materials.map((material: Material) => {
@@ -71,7 +71,7 @@ export default function DonationModal({ isOpen, onClose, materials, campaignId, 
         });
         const updatedCampaign = { ...campaignData, donations: updatedCampaignDonations, materials: updatedMaterials };
 
-        await fetch(`http://localhost:3001/campaigns/${campaignId}`, {
+        await fetch(`/api/campaigns/${campaignId}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',

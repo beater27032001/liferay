@@ -11,7 +11,7 @@ export default function CampaignCarousel() {
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/campaigns")
+    fetch("/api/campaigns")
       .then((response) => response.json())
       .then((data) => setCampaigns(data));
   }, []);

@@ -7,7 +7,7 @@ export default function DataGraph() {
   const [data, setData] = useState<Data[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/data")
+    fetch("/api/data")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);

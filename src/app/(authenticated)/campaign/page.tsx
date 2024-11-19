@@ -15,7 +15,7 @@ export default function Campaign() {
   useEffect(() => {
     const role = localStorage.getItem("userRole");
     setUserRole(role);
-    fetch("http://localhost:3001/campaigns")
+    fetch("/api/campaigns")
       .then((response) => response.json())
       .then((data) => setCampaigns(data));
   }, []);

@@ -26,15 +26,15 @@ export default function SpecificCampaign() {
     setUserRole(role);
     setUserId(userIdLocalSotare);
     if (id) {
-      fetch(`http://localhost:3001/campaigns/${id}`)
+      fetch(`/api/campaigns/${id}`)
         .then((response) => response.json())
         .then((data) => setCampaign(data));
 
-      fetch(`http://localhost:3001/donations?campaignId=${id}`)
+      fetch(`/api/donations?campaignId=${id}`)
         .then((response) => response.json())
         .then((data) => setDonations(data));
 
-      fetch(`http://localhost:3001/users`)
+      fetch(`/api/users`)
         .then((response) => response.json())
         .then((users) => {
           const userMap = users.reduce((acc: { [key: string]: string }, user: Users) => {
@@ -67,7 +67,7 @@ export default function SpecificCampaign() {
       const updatedParticipants = [...campaign.participants, userId];
       const updatedCampaign = { ...campaign, participants: updatedParticipants };
 
-      const response = await fetch(`http://localhost:3001/campaigns/${campaign.id}`, {
+      const response = await fetch(`/api/campaigns/${campaign.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -78,12 +78,12 @@ export default function SpecificCampaign() {
       if (response.ok) {
         setCampaign(updatedCampaign);
 
-        const userResponse = await fetch(`http://localhost:3001/users/${userId}`);
+        const userResponse = await fetch(`/api/users/${userId}`);
         const userData = await userResponse.json();
         const updatedCampaigns = [...userData.campaigns, campaign.id];
         const updatedUser = { ...userData, campaigns: updatedCampaigns };
 
-        const userUpdateResponse = await fetch(`http://localhost:3001/users/${userId}`, {
+        const userUpdateResponse = await fetch(`/api/users/${userId}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',

@@ -64,7 +64,7 @@ export default function CampaignModal({ isOpen, onClose, onInsert }: CampaignMod
         participants: []
       };
 
-      const response = await fetch('http://localhost:3001/campaigns', {
+      const response = await fetch('/api/campaigns', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

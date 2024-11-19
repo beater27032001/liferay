@@ -10,7 +10,7 @@ export default function Login() {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch("http://localhost:3001/users");
+      const response = await fetch("/api/users");
       const users = await response.json();
 
       const user = users.find((user: { email: string; password: string; }) => user.email === email && user.password === password);

@@ -16,7 +16,7 @@ export default function Data() {
   useEffect(() => {
     const role = localStorage.getItem("userRole");
     setUserRole(role);
-    fetch("http://localhost:3001/data")
+    fetch("/api/data")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
@@ -58,7 +58,7 @@ export default function Data() {
     const updatedItem = updatedData.find((item) => item.title === title);
 
     if (updatedItem) {
-      fetch(`http://localhost:3001/data/${updatedItem.id}`, {
+      fetch(`/api/data/${updatedItem.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
