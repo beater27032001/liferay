@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from "next/image";
-import logoBlue from '@/assets/logoblue.png';
+import logoBlue from '../assets/logoBlue.png';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 export default function Footer() {
