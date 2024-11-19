@@ -1,0 +1,207 @@
+{
+  "campaigns": [
+    {
+      "id": "cf318f3e-c3f2-46a8-a27a-a171b7417616",
+      "title": "Teste 333",
+      "description": "Teste",
+      "image": "/img.png",
+      "materials": [
+        "Teste"
+      ],
+      "startDate": "2024-11-18",
+      "endDate": "2024-11-25",
+      "donations": [],
+      "participants": []
+    },
+    {
+      "id": "0c5be2e1-8302-495d-bfbf-641c87975bb8",
+      "title": "Teste2",
+      "description": "Teste",
+      "image": "/img.png",
+      "materials": [
+        "Teste1"
+      ],
+      "startDate": "2024-11-18",
+      "endDate": "2024-12-03",
+      "donations": [],
+      "participants": [
+        "user1"
+      ]
+    },
+    {
+      "id": "01ff1245-be3b-4260-b697-a2022e2c792d",
+      "title": "Teste3",
+      "description": "Teste de campanha ashuuashusa",
+      "image": "/img.png",
+      "materials": [
+        "Algodão",
+        "Plástico",
+        "Papel"
+      ],
+      "startDate": "2024-11-05",
+      "endDate": "2025-01-29",
+      "donations": [],
+      "participants": [
+        "user1"
+      ]
+    },
+    {
+      "id": "547701eb-2382-4e9c-948f-f7320c474a41",
+      "title": "Teste4",
+      "description": "Teste camapnha 4",
+      "image": "/img.png",
+      "materials": [
+        {
+          "name": "teste",
+          "quantity": 20
+        },
+        {
+          "name": "teste1",
+          "quantity": 0
+        },
+        {
+          "name": "Teste2",
+          "quantity": 0
+        }
+      ],
+      "startDate": "2024-10-28",
+      "endDate": "2025-01-29",
+      "donations": [
+        "ebc2927a-fd24-4345-8009-4245d328ba4d",
+        "754733ff-422b-4fab-9146-cda36c829daa",
+        "9500f166-4f8c-4185-bfdd-616478518d31",
+        "4c91fb9e-f6e7-480c-8e82-458338d0a63e"
+      ],
+      "participants": [
+        "user1"
+      ]
+    },
+    {
+      "id": "1b36779d-3997-4e65-9768-0c277c00865d",
+      "title": "Teste de campanha",
+      "description": "Testando mais uma vez",
+      "image": "/img.png",
+      "materials": [
+        {
+          "name": "Vidro",
+          "quantity": 4
+        }
+      ],
+      "startDate": "2024-11-19",
+      "endDate": "2024-12-31",
+      "donations": [
+        "30bdd199-185b-4d17-91ae-5926790c7c05",
+        "024d6b62-a19a-42ff-a879-e9aea68a8da4"
+      ],
+      "participants": [
+        "user1",
+        "user3"
+      ]
+    }
+  ],
+  "data": [
+    {
+      "id": "data1",
+      "title": "Quantidade de lixo reciclado",
+      "quantity": 810
+    },
+    {
+      "id": "data2",
+      "title": "Adubo produzido",
+      "quantity": 305
+    },
+    {
+      "id": "data3",
+      "title": "Emissões de carbono evitadas",
+      "quantity": 1200
+    }
+  ],
+  "donations": [
+    {
+      "id": "ebc2927a-fd24-4345-8009-4245d328ba4d",
+      "title": "teste",
+      "quantity": 10,
+      "userId": "user1",
+      "campaignId": "547701eb-2382-4e9c-948f-f7320c474a41"
+    },
+    {
+      "id": "754733ff-422b-4fab-9146-cda36c829daa",
+      "title": "teste",
+      "quantity": 10,
+      "userId": "user1",
+      "campaignId": "547701eb-2382-4e9c-948f-f7320c474a41"
+    },
+    {
+      "id": "9500f166-4f8c-4185-bfdd-616478518d31",
+      "title": "teste",
+      "quantity": 10,
+      "userId": "user1",
+      "campaignId": "547701eb-2382-4e9c-948f-f7320c474a41"
+    },
+    {
+      "id": "4c91fb9e-f6e7-480c-8e82-458338d0a63e",
+      "title": "teste",
+      "quantity": 10,
+      "userId": "user1",
+      "campaignId": "547701eb-2382-4e9c-948f-f7320c474a41"
+    },
+    {
+      "id": "30bdd199-185b-4d17-91ae-5926790c7c05",
+      "title": "Plástico",
+      "quantity": 100,
+      "userId": "user1",
+      "campaignId": "1b36779d-3997-4e65-9768-0c277c00865d"
+    },
+    {
+      "id": "024d6b62-a19a-42ff-a879-e9aea68a8da4",
+      "title": "Vidro",
+      "quantity": 4,
+      "userId": "user3",
+      "campaignId": "1b36779d-3997-4e65-9768-0c277c00865d"
+    }
+  ],
+  "users": [
+    {
+      "id": "user1",
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "adminpassword",
+      "campaigns": [
+        "0c5be2e1-8302-495d-bfbf-641c87975bb8",
+        "547701eb-2382-4e9c-948f-f7320c474a41",
+        "01ff1245-be3b-4260-b697-a2022e2c792d",
+        "1b36779d-3997-4e65-9768-0c277c00865d"
+      ],
+      "donations": [
+        "ebc2927a-fd24-4345-8009-4245d328ba4d",
+        "754733ff-422b-4fab-9146-cda36c829daa",
+        "9500f166-4f8c-4185-bfdd-616478518d31",
+        "4c91fb9e-f6e7-480c-8e82-458338d0a63e",
+        "30bdd199-185b-4d17-91ae-5926790c7c05"
+      ],
+      "role": "admin"
+    },
+    {
+      "id": "user2",
+      "name": "Regular User",
+      "email": "user@example.com",
+      "password": "userpassword",
+      "campaigns": [],
+      "donations": [],
+      "role": "user"
+    },
+    {
+      "id": "user3",
+      "name": "José Carlos",
+      "email": "jose@gmail.com",
+      "password": "123456",
+      "campaigns": [
+        "1b36779d-3997-4e65-9768-0c277c00865d"
+      ],
+      "donations": [
+        "024d6b62-a19a-42ff-a879-e9aea68a8da4"
+      ],
+      "role": "user"
+    }
+  ]
+}
