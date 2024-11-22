@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import logoBlue from "public/logoBlue.png";
 import { IoIosNotifications } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { usePathname } from "next/navigation";
@@ -26,7 +25,7 @@ export default function NavBar() {
 
   return (
     <header className="flex items-center justify-between bg-liferayGrey px-7 py-3">
-      <Image src={logoBlue} alt="Liferay" width={215} />
+      <Image src="/logoBlue.png" alt="Liferay" width={215} />
       <nav className="-ml-[50px] text-black">
         <Link
           href="/home"

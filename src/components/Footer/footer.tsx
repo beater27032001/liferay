@@ -1,12 +1,11 @@
 import Link from 'next/link';
 import Image from "next/image";
-import logoBlue from 'public/logoBlue.png';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 export default function Footer() {
   return (
     <footer className='flex items-center justify-between px-7 py-4 bg-liferayGrey'>
-      <Image src={logoBlue} alt="Liferay" width={215} />
+      <Image src="/logoBlue.png" alt="Liferay" width={215} />
 
       <span className='text-black'>© 2024 Squad39. Todos os direitos reservados</span>
       <div className='flex gap-3'>
