@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import Image from "next/image";
-import logoBlue from "../../assets/logoBlue.png";
+import logoBlue from "../../public/logoBlue.png";
 
 export default function Login() {
   const [email, setEmail] = useState("");

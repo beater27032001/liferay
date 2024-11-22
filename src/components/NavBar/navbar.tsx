@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import logoBlue from "../../assets/logoBlue.png";
+import logoBlue from "../../public/logoBlue.png";
 import { IoIosNotifications } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { usePathname } from "next/navigation";
