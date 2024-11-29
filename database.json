@@ -1,51 +1,6 @@
 {
   "campaigns": [
     {
-      "id": "cf318f3e-c3f2-46a8-a27a-a171b7417616",
-      "title": "Teste 333",
-      "description": "Teste",
-      "image": "/img.png",
-      "materials": [
-        "Teste"
-      ],
-      "startDate": "2024-11-18",
-      "endDate": "2024-11-25",
-      "donations": [],
-      "participants": []
-    },
-    {
-      "id": "0c5be2e1-8302-495d-bfbf-641c87975bb8",
-      "title": "Teste2",
-      "description": "Teste",
-      "image": "/img.png",
-      "materials": [
-        "Teste1"
-      ],
-      "startDate": "2024-11-18",
-      "endDate": "2024-12-03",
-      "donations": [],
-      "participants": [
-        "user1"
-      ]
-    },
-    {
-      "id": "01ff1245-be3b-4260-b697-a2022e2c792d",
-      "title": "Teste3",
-      "description": "Teste de campanha ashuuashusa",
-      "image": "/img.png",
-      "materials": [
-        "Algodão",
-        "Plástico",
-        "Papel"
-      ],
-      "startDate": "2024-11-05",
-      "endDate": "2025-01-29",
-      "donations": [],
-      "participants": [
-        "user1"
-      ]
-    },
-    {
       "id": "547701eb-2382-4e9c-948f-f7320c474a41",
       "title": "Teste4",
       "description": "Teste camapnha 4",
@@ -123,41 +78,6 @@
       "quantity": 10,
       "userId": "user1",
       "campaignId": "547701eb-2382-4e9c-948f-f7320c474a41"
-    },
-    {
-      "id": "754733ff-422b-4fab-9146-cda36c829daa",
-      "title": "teste",
-      "quantity": 10,
-      "userId": "user1",
-      "campaignId": "547701eb-2382-4e9c-948f-f7320c474a41"
-    },
-    {
-      "id": "9500f166-4f8c-4185-bfdd-616478518d31",
-      "title": "teste",
-      "quantity": 10,
-      "userId": "user1",
-      "campaignId": "547701eb-2382-4e9c-948f-f7320c474a41"
-    },
-    {
-      "id": "4c91fb9e-f6e7-480c-8e82-458338d0a63e",
-      "title": "teste",
-      "quantity": 10,
-      "userId": "user1",
-      "campaignId": "547701eb-2382-4e9c-948f-f7320c474a41"
-    },
-    {
-      "id": "30bdd199-185b-4d17-91ae-5926790c7c05",
-      "title": "Plástico",
-      "quantity": 100,
-      "userId": "user1",
-      "campaignId": "1b36779d-3997-4e65-9768-0c277c00865d"
-    },
-    {
-      "id": "024d6b62-a19a-42ff-a879-e9aea68a8da4",
-      "title": "Vidro",
-      "quantity": 4,
-      "userId": "user3",
-      "campaignId": "1b36779d-3997-4e65-9768-0c277c00865d"
     }
   ],
   "users": [
